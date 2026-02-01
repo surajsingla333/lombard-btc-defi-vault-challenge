@@ -122,6 +122,10 @@ Demonstrates depositing assets into Lombard **via the Teller**, which is the **c
 
 This reflects **actual Lombard production behavior**.
 
+### Result Image
+
+![Response of the script](teller-response.png)
+
 ---
 
 ## 2️⃣ `deposit_with_BTCe_wrapper.ts`
@@ -129,6 +133,10 @@ This reflects **actual Lombard production behavior**.
 ### Purpose
 
 Demonstrates an **alternative deposit path** using a **BTCe wrapper**, which abstracts asset conversion before entering Lombard.
+
+The script internally again depicts 2 different ways of how the vault can be used. 
+One is to treat LBTCv as the deposit currency and get BTCe as share tokens.
+Other is to use LBTC as the deposit currency and get BTCe as the share tokens. In this new LBTCv is mined to the BTCe wrapper contract.
 
 ### What the script does
 
@@ -148,6 +156,10 @@ Some Lombard integrations:
 - Abstract Teller complexity
 
 This script shows how Lombard can be composed into broader DeFi systems.
+
+### Result Image
+
+![Image of the script response](wrapper-response.png)
 
 ---
 
